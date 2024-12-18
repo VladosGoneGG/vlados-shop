@@ -12,7 +12,7 @@ import { store } from './store/store.ts'
 
 createRoot(document.getElementById('root')!).render(
 	<Provider store={store}>
-		<BrowserRouter>
+		<BrowserRouter basename='/vlados-shop'>
 			<div className='w-full min-h-screen flex flex-col'>
 				<Header />
 				<div className='flex-grow flex items-center justify-center bg-gray-800'>
